@@ -67,7 +67,16 @@ extension ViewController: CLLocationManagerDelegate {
 //		}
 //	}
 	
-	func updateMap 
+  func updateMap(start: CLLocationCoordinate2D) -> (CLLocationCoordinate2D) -> CLLocationDirection {
+    var oldLocation = start
+    return { newLocation in
+      var heading = course2(oldLocation, newLocation)
+      
+      oldLocation = newLocation
+      return heading
+    }
+  }
+  
 }
 
 
