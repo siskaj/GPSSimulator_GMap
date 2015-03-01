@@ -80,6 +80,7 @@
 		C5AEA6101A9FB8A300249353 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5AEA60F1A9FB8A300249353 /* CoreData.framework */; };
 		C5AEA6121A9FB8C100249353 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5AEA6111A9FB8C100249353 /* ImageIO.framework */; };
 		C5AEA6141A9FB8DE00249353 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5AEA6131A9FB8DE00249353 /* SystemConfiguration.framework */; };
+		C5B98E7E1AA1D91400597066 /* LocationSimulator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B98E7D1AA1D91400597066 /* LocationSimulator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,23 +112,23 @@
 			remoteGlobalIDString = C5AEA5C01A9F921300249353;
 			remoteInfo = GPSSimulator_GMap;
 		};
-		C5AEA5EB1A9F932F00249353 /* PBXContainerItemProxy */ = {
+		C5F421351AA04AB600890ADE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = C5AEA5E61A9F932F00249353 /* BrightFutures.xcodeproj */;
+			containerPortal = C5F421301AA04AB600890ADE /* BrightFutures.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = E9DF0815194470060083F7F2;
 			remoteInfo = BrightFutures;
 		};
-		C5AEA5ED1A9F932F00249353 /* PBXContainerItemProxy */ = {
+		C5F421371AA04AB600890ADE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = C5AEA5E61A9F932F00249353 /* BrightFutures.xcodeproj */;
+			containerPortal = C5F421301AA04AB600890ADE /* BrightFutures.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = E9DF0820194470060083F7F2;
 			remoteInfo = BrightFuturesTests;
 		};
-		C5AEA5FA1A9F94D800249353 /* PBXContainerItemProxy */ = {
+		C5F421391AA04B5300890ADE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = C5AEA5E61A9F932F00249353 /* BrightFutures.xcodeproj */;
+			containerPortal = C5F421301AA04AB600890ADE /* BrightFutures.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = E9DF0814194470060083F7F2;
 			remoteInfo = BrightFutures;
@@ -211,7 +212,6 @@
 		C5AEA5D61A9F921300249353 /* GPSSimulator_GMapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GPSSimulator_GMapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5AEA5DB1A9F921300249353 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C5AEA5DC1A9F921300249353 /* GPSSimulator_GMapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPSSimulator_GMapTests.swift; sourceTree = "<group>"; };
-		C5AEA5E61A9F932F00249353 /* BrightFutures.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = BrightFutures.xcodeproj; path = ../BrightFutures/BrightFutures.xcodeproj; sourceTree = "<group>"; };
 		C5AEA5EF1A9F936C00249353 /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = GPSSimulator_GMap/GoogleMaps.framework; sourceTree = "<group>"; };
 		C5AEA5F11A9F93DA00249353 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		C5AEA5F31A9F943E00249353 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
@@ -229,6 +229,8 @@
 		C5AEA60F1A9FB8A300249353 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		C5AEA6111A9FB8C100249353 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		C5AEA6131A9FB8DE00249353 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		C5B98E7D1AA1D91400597066 /* LocationSimulator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationSimulator.swift; sourceTree = "<group>"; };
+		C5F421301AA04AB600890ADE /* BrightFutures.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = BrightFutures.xcodeproj; path = BrightFutures_swift1.2/BrightFutures.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -361,6 +363,7 @@
 		C5AEA5B81A9F921300249353 = {
 			isa = PBXGroup;
 			children = (
+				C5B98E7D1AA1D91400597066 /* LocationSimulator.swift */,
 				C5AEA5FE1A9FB50100249353 /* GooglePlace.swift */,
 				C5AEA5FC1A9FB43E00249353 /* GoogleDataProvider.swift */,
 				C5AEA5C31A9F921300249353 /* GPSSimulator_GMap */,
@@ -369,8 +372,8 @@
 				C5AEA5F91A9F947000249353 /* Frameworks */,
 				C5AEA5D91A9F921300249353 /* GPSSimulator_GMapTests */,
 				C5AEA5C21A9F921300249353 /* Products */,
-				C5AEA5E61A9F932F00249353 /* BrightFutures.xcodeproj */,
 				C5AEA6001A9FB64000249353 /* GPSSimulator_GMap-Bridging-Header.h */,
+				C5F421301AA04AB600890ADE /* BrightFutures.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -423,15 +426,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		C5AEA5E71A9F932F00249353 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				C5AEA5EC1A9F932F00249353 /* BrightFutures.framework */,
-				C5AEA5EE1A9F932F00249353 /* BrightFuturesTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		C5AEA5F91A9F947000249353 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -451,6 +445,15 @@
 				C5AEA5F51A9F943E00249353 /* libz.dylib */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C5F421311AA04AB600890ADE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C5F421361AA04AB600890ADE /* BrightFutures.framework */,
+				C5F421381AA04AB600890ADE /* BrightFuturesTests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -540,7 +543,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				C5AEA5FB1A9F94D800249353 /* PBXTargetDependency */,
+				C5F4213A1AA04B5300890ADE /* PBXTargetDependency */,
 				C5A639A01AA034EB00370D45 /* PBXTargetDependency */,
 			);
 			name = GPSSimulator_GMap;
@@ -604,8 +607,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = C5AEA5E71A9F932F00249353 /* Products */;
-					ProjectRef = C5AEA5E61A9F932F00249353 /* BrightFutures.xcodeproj */;
+					ProductGroup = C5F421311AA04AB600890ADE /* Products */;
+					ProjectRef = C5F421301AA04AB600890ADE /* BrightFutures.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -619,18 +622,18 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		C5AEA5EC1A9F932F00249353 /* BrightFutures.framework */ = {
+		C5F421361AA04AB600890ADE /* BrightFutures.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = BrightFutures.framework;
-			remoteRef = C5AEA5EB1A9F932F00249353 /* PBXContainerItemProxy */;
+			remoteRef = C5F421351AA04AB600890ADE /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		C5AEA5EE1A9F932F00249353 /* BrightFuturesTests.xctest */ = {
+		C5F421381AA04AB600890ADE /* BrightFuturesTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = BrightFuturesTests.xctest;
-			remoteRef = C5AEA5ED1A9F932F00249353 /* PBXContainerItemProxy */;
+			remoteRef = C5F421371AA04AB600890ADE /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -713,6 +716,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C5AEA5C91A9F921300249353 /* ViewController.swift in Sources */,
+				C5B98E7E1AA1D91400597066 /* LocationSimulator.swift in Sources */,
 				C5AEA5FD1A9FB43E00249353 /* GoogleDataProvider.swift in Sources */,
 				C5AEA5FF1A9FB50100249353 /* GooglePlace.swift in Sources */,
 				C5AEA5C71A9F921300249353 /* AppDelegate.swift in Sources */,
@@ -750,10 +754,10 @@
 			target = C5AEA5C01A9F921300249353 /* GPSSimulator_GMap */;
 			targetProxy = C5AEA5D71A9F921300249353 /* PBXContainerItemProxy */;
 		};
-		C5AEA5FB1A9F94D800249353 /* PBXTargetDependency */ = {
+		C5F4213A1AA04B5300890ADE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = BrightFutures;
-			targetProxy = C5AEA5FA1A9F94D800249353 /* PBXContainerItemProxy */;
+			targetProxy = C5F421391AA04B5300890ADE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

@@ -9,6 +9,8 @@
 import UIKit
 import Foundation
 import CoreLocation
+import BrightFutures
+import MapKit
 
 class GoogleDataProvider {
 	
@@ -76,4 +78,65 @@ class GoogleDataProvider {
 			}.resume()
 	}
 	
+	func setupScenario() {
+		
+		func obtainCoordinatesItemFromString(nazev: String) -> Future<CLLocationCoordinate2D> {
+			let promise = Promise<CLLocationCoordinate2D>()
+			let geocoder = CLGeocoder()
+			
+			geocoder.geocodeAddressString(nazev) { (placemarks: [AnyObject]!, error: NSError!) in
+				var outError: NSError?
+				if placemarks != nil && placemarks.count > 0 {
+					let mark = placemarks[0] as! CLPlacemark
+					let coordinate = mark.location.coordinate
+					promise.success(coordinate)
+				} else {
+					if error != nil {
+						promise.failure(error)
+					} else {
+						outError = NSError(domain: "com.baltoro.BrightFuturesTest1", code: 404, userInfo:[NSLocalizedDescriptionKey : "No routes found!"])
+						promise.failure(outError!)
+					}
+					
+				}
+			}
+			return promise.future
+  }
+		
+		
 	}
+	func fetchRouteFrom(from: CLLocationCoordinate2D, to: CLLocationCoordinate2D) -> Future<JSRoute> {
+	let promise = Promise<JSRoute>()
+		let urlString = "https://maps.googleapis.com/maps/api/directions/json?key=\(apiKey)&origin=\(from.latitude),\(from.longitude)&destination=\(to.latitude),\(to.longitude)&mode=bicycling"
+
+		UIApplication.sharedApplication().networkActivityIndicatorVisible = true
+		session.dataTaskWithURL(NSURL(string: urlString)!) {data, response, error in
+			UIApplication.sharedApplication().networkActivityIndicatorVisible = false
+			var pole = [CLLocationCoordinate2D]()
+			if let json = NSJSONSerialization.JSONObjectWithData(data, options:nil, error:nil) as? [String:AnyObject],
+				let routes = json["routes"] as AnyObject? as? [AnyObject],
+				let route = routes.first as? [String : AnyObject],
+				let polyline = route["overview_polyline"] as AnyObject? as? [String : String],
+				let encodedPath = polyline["points"] as AnyObject? as? String {
+					let path = GMSPath(fromEncodedPath: encodedPath)
+					for i in 0..<path.count() {
+						pole.append(path.coordinateAtIndex(i))
+					}
+			promise.success(JSRoute(points: pole))
+			} else {
+				if error != nil {
+					promise.failure(error)
+				} else {
+					var outError = NSError(domain: "com.baltoro.BrightFuturesTest1", code: 404, userInfo:[NSLocalizedDescriptionKey : "No routes found!"])
+					promise.failure(outError)
+				}
+			}
+		}
+	return promise.future
+	}
+	
+}
+
+struct JSRoute {
+	var points: [CLLocationCoordinate2D]
+}
