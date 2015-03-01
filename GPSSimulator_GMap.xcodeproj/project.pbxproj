@@ -84,6 +84,27 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		85241F751AA3124C009642BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 85241F701AA3124C009642BD /* BrightFutures.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E9DF0815194470060083F7F2;
+			remoteInfo = BrightFutures;
+		};
+		85241F771AA3124C009642BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 85241F701AA3124C009642BD /* BrightFutures.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E9DF0820194470060083F7F2;
+			remoteInfo = BrightFuturesTests;
+		};
+		85E870491AA312D2002D331A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 85241F701AA3124C009642BD /* BrightFutures.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = E9DF0814194470060083F7F2;
+			remoteInfo = BrightFutures;
+		};
 		C5A639961AA034EB00370D45 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = C5AEA5B91A9F921300249353 /* Project object */;
@@ -112,27 +133,6 @@
 			remoteGlobalIDString = C5AEA5C01A9F921300249353;
 			remoteInfo = GPSSimulator_GMap;
 		};
-		C5F421351AA04AB600890ADE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C5F421301AA04AB600890ADE /* BrightFutures.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = E9DF0815194470060083F7F2;
-			remoteInfo = BrightFutures;
-		};
-		C5F421371AA04AB600890ADE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C5F421301AA04AB600890ADE /* BrightFutures.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = E9DF0820194470060083F7F2;
-			remoteInfo = BrightFuturesTests;
-		};
-		C5F421391AA04B5300890ADE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C5F421301AA04AB600890ADE /* BrightFutures.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = E9DF0814194470060083F7F2;
-			remoteInfo = BrightFutures;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -150,6 +150,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		85241F701AA3124C009642BD /* BrightFutures.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = BrightFutures.xcodeproj; path = swift1.2/BrightFutures.xcodeproj; sourceTree = "<group>"; };
 		C5A6398A1AA034EB00370D45 /* GPX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GPX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5A6398D1AA034EB00370D45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C5A6398E1AA034EB00370D45 /* GPX.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPX.h; sourceTree = "<group>"; };
@@ -230,7 +231,6 @@
 		C5AEA6111A9FB8C100249353 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		C5AEA6131A9FB8DE00249353 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		C5B98E7D1AA1D91400597066 /* LocationSimulator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationSimulator.swift; sourceTree = "<group>"; };
-		C5F421301AA04AB600890ADE /* BrightFutures.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = BrightFutures.xcodeproj; path = BrightFutures_swift1.2/BrightFutures.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -280,6 +280,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		85241F711AA3124C009642BD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				85241F761AA3124C009642BD /* BrightFutures.framework */,
+				85241F781AA3124C009642BD /* BrightFuturesTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		C5A6398B1AA034EB00370D45 /* GPX */ = {
 			isa = PBXGroup;
 			children = (
@@ -373,7 +382,7 @@
 				C5AEA5D91A9F921300249353 /* GPSSimulator_GMapTests */,
 				C5AEA5C21A9F921300249353 /* Products */,
 				C5AEA6001A9FB64000249353 /* GPSSimulator_GMap-Bridging-Header.h */,
-				C5F421301AA04AB600890ADE /* BrightFutures.xcodeproj */,
+				85241F701AA3124C009642BD /* BrightFutures.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -445,15 +454,6 @@
 				C5AEA5F51A9F943E00249353 /* libz.dylib */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		C5F421311AA04AB600890ADE /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				C5F421361AA04AB600890ADE /* BrightFutures.framework */,
-				C5F421381AA04AB600890ADE /* BrightFuturesTests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -543,7 +543,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				C5F4213A1AA04B5300890ADE /* PBXTargetDependency */,
+				85E8704A1AA312D2002D331A /* PBXTargetDependency */,
 				C5A639A01AA034EB00370D45 /* PBXTargetDependency */,
 			);
 			name = GPSSimulator_GMap;
@@ -607,8 +607,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = C5F421311AA04AB600890ADE /* Products */;
-					ProjectRef = C5F421301AA04AB600890ADE /* BrightFutures.xcodeproj */;
+					ProductGroup = 85241F711AA3124C009642BD /* Products */;
+					ProjectRef = 85241F701AA3124C009642BD /* BrightFutures.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -622,18 +622,18 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		C5F421361AA04AB600890ADE /* BrightFutures.framework */ = {
+		85241F761AA3124C009642BD /* BrightFutures.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = BrightFutures.framework;
-			remoteRef = C5F421351AA04AB600890ADE /* PBXContainerItemProxy */;
+			remoteRef = 85241F751AA3124C009642BD /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		C5F421381AA04AB600890ADE /* BrightFuturesTests.xctest */ = {
+		85241F781AA3124C009642BD /* BrightFuturesTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = BrightFuturesTests.xctest;
-			remoteRef = C5F421371AA04AB600890ADE /* PBXContainerItemProxy */;
+			remoteRef = 85241F771AA3124C009642BD /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -734,6 +734,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		85E8704A1AA312D2002D331A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BrightFutures;
+			targetProxy = 85E870491AA312D2002D331A /* PBXContainerItemProxy */;
+		};
 		C5A639971AA034EB00370D45 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = C5A639891AA034EB00370D45 /* GPX */;
@@ -753,11 +758,6 @@
 			isa = PBXTargetDependency;
 			target = C5AEA5C01A9F921300249353 /* GPSSimulator_GMap */;
 			targetProxy = C5AEA5D71A9F921300249353 /* PBXContainerItemProxy */;
-		};
-		C5F4213A1AA04B5300890ADE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = BrightFutures;
-			targetProxy = C5F421391AA04B5300890ADE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
