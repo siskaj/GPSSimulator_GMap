@@ -48,7 +48,7 @@ extension ViewController: CLLocationManagerDelegate {
 	func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
 		let oldLocation = locations.first as? CLLocation
 		let currentLocation = locations.last as? CLLocation
-		updateMap(oldLocation, newLocation: currentLocation)
+//		updateMap(oldLocation, newLocation: currentLocation)
 //		detailViewController.localPath = aktualniRouteStep(route, currentLocation!, 1000)
 	}
 	

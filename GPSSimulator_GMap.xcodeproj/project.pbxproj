@@ -84,26 +84,19 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		85241F751AA3124C009642BD /* PBXContainerItemProxy */ = {
+		C520D7941AA34B6A00B5665E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 85241F701AA3124C009642BD /* BrightFutures.xcodeproj */;
+			containerPortal = C520D78F1AA34B6A00B5665E /* BrightFutures.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = E9DF0815194470060083F7F2;
 			remoteInfo = BrightFutures;
 		};
-		85241F771AA3124C009642BD /* PBXContainerItemProxy */ = {
+		C520D7961AA34B6A00B5665E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 85241F701AA3124C009642BD /* BrightFutures.xcodeproj */;
+			containerPortal = C520D78F1AA34B6A00B5665E /* BrightFutures.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = E9DF0820194470060083F7F2;
 			remoteInfo = BrightFuturesTests;
-		};
-		85E870491AA312D2002D331A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 85241F701AA3124C009642BD /* BrightFutures.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = E9DF0814194470060083F7F2;
-			remoteInfo = BrightFutures;
 		};
 		C5A639961AA034EB00370D45 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -133,6 +126,13 @@
 			remoteGlobalIDString = C5AEA5C01A9F921300249353;
 			remoteInfo = GPSSimulator_GMap;
 		};
+		C5BFF92E1AA34BB500E9A278 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C520D78F1AA34B6A00B5665E /* BrightFutures.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = E9DF0814194470060083F7F2;
+			remoteInfo = BrightFutures;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -150,7 +150,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		85241F701AA3124C009642BD /* BrightFutures.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = BrightFutures.xcodeproj; path = swift1.2/BrightFutures.xcodeproj; sourceTree = "<group>"; };
+		C520D78F1AA34B6A00B5665E /* BrightFutures.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = BrightFutures.xcodeproj; path = swift1.2/BrightFutures.xcodeproj; sourceTree = "<group>"; };
 		C5A6398A1AA034EB00370D45 /* GPX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GPX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5A6398D1AA034EB00370D45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C5A6398E1AA034EB00370D45 /* GPX.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPX.h; sourceTree = "<group>"; };
@@ -280,11 +280,11 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		85241F711AA3124C009642BD /* Products */ = {
+		C520D7901AA34B6A00B5665E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				85241F761AA3124C009642BD /* BrightFutures.framework */,
-				85241F781AA3124C009642BD /* BrightFuturesTests.xctest */,
+				C520D7951AA34B6A00B5665E /* BrightFutures.framework */,
+				C520D7971AA34B6A00B5665E /* BrightFuturesTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -382,7 +382,7 @@
 				C5AEA5D91A9F921300249353 /* GPSSimulator_GMapTests */,
 				C5AEA5C21A9F921300249353 /* Products */,
 				C5AEA6001A9FB64000249353 /* GPSSimulator_GMap-Bridging-Header.h */,
-				85241F701AA3124C009642BD /* BrightFutures.xcodeproj */,
+				C520D78F1AA34B6A00B5665E /* BrightFutures.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -543,7 +543,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				85E8704A1AA312D2002D331A /* PBXTargetDependency */,
+				C5BFF92F1AA34BB500E9A278 /* PBXTargetDependency */,
 				C5A639A01AA034EB00370D45 /* PBXTargetDependency */,
 			);
 			name = GPSSimulator_GMap;
@@ -607,8 +607,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 85241F711AA3124C009642BD /* Products */;
-					ProjectRef = 85241F701AA3124C009642BD /* BrightFutures.xcodeproj */;
+					ProductGroup = C520D7901AA34B6A00B5665E /* Products */;
+					ProjectRef = C520D78F1AA34B6A00B5665E /* BrightFutures.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -622,18 +622,18 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		85241F761AA3124C009642BD /* BrightFutures.framework */ = {
+		C520D7951AA34B6A00B5665E /* BrightFutures.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = BrightFutures.framework;
-			remoteRef = 85241F751AA3124C009642BD /* PBXContainerItemProxy */;
+			remoteRef = C520D7941AA34B6A00B5665E /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		85241F781AA3124C009642BD /* BrightFuturesTests.xctest */ = {
+		C520D7971AA34B6A00B5665E /* BrightFuturesTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = BrightFuturesTests.xctest;
-			remoteRef = 85241F771AA3124C009642BD /* PBXContainerItemProxy */;
+			remoteRef = C520D7961AA34B6A00B5665E /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -734,11 +734,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		85E8704A1AA312D2002D331A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = BrightFutures;
-			targetProxy = 85E870491AA312D2002D331A /* PBXContainerItemProxy */;
-		};
 		C5A639971AA034EB00370D45 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = C5A639891AA034EB00370D45 /* GPX */;
@@ -758,6 +753,11 @@
 			isa = PBXTargetDependency;
 			target = C5AEA5C01A9F921300249353 /* GPSSimulator_GMap */;
 			targetProxy = C5AEA5D71A9F921300249353 /* PBXContainerItemProxy */;
+		};
+		C5BFF92F1AA34BB500E9A278 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BrightFutures;
+			targetProxy = C5BFF92E1AA34BB500E9A278 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
